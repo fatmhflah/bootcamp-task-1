@@ -1,0 +1,169 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+
+ 
+
+  --color-primary: #219F95;
+  --color-secondary: #AFCEDD;
+  --color-dark: #000;
+  --color-light: #fff;
+  --color-gray: #696969;
+
+ 
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+ 
+ 
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-secondary-100);
+}
+
+body
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+ 
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-btn {
+  border: 0;
+  outline: 0;
+  border-radius: var(--border-radius-md);
+  padding: 12px 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--color-primary);
+  color: var(--color-light);
+}
+.container {
+  width: 90vw;
+  height: 90vh;
+  padding: 30px;
+  /* background-color: #c9c8c8; */
+  @media screen and (max-width: 1199.98px) {
+      width: 100vw;
+      height: 100vh;
+
+  }
+}
+
+
+.requestBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.requestBox .title {
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.requestBox__list {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.5rem;
+
+  @media screen and (max-width: 767.98px){
+    grid-template-columns: 1fr;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991.98px){
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* @media screen and (max-width: 575.98px) {
+  .requestBox__list {
+    grid-template-columns: 1fr;
+  }
+
+}
+@media screen and (max-width: 575.98px) {
+  .requestBox__list {
+    grid-template-columns: 1fr;
+  }
+
+} */
+.requestBox__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+}
+
+.requestBox__item__header .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-left: 0.8rem;
+  border-radius: var(--border-radius-sm);
+  color: #234894;
+  background-color: var(--color-secondary);
+}
+
+.requestBox__item__header .text {
+  color: #234894;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.requestBox__item__header .date {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.requestBox__item__content .title {
+  font-size: 1.8rem;
+  font-weight: 900;
+
+}
+.requestBox__item__content .subtle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
+ 
+.requestBox__item__footer .userinfo img{
+  width: 4rem;
+  height: 4rem;
+  margin-left: .8rem;
+  border-radius: var(--border-radius-sm);
+
+}
+
+.requestBox__item__footer .userinfo .name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
